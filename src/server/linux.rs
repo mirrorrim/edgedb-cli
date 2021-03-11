@@ -298,7 +298,7 @@ ExecStart={server_path} --data-dir=${{EDGEDATA}} --runstate-dir=%t/edgedb-{insta
 ExecReload=/bin/kill -HUP ${{MAINPID}}
 KillMode=mixed
 KillSignal=SIGINT
-TimeoutSec=0
+TimeoutSec=95
 
 [Install]
 WantedBy=multi-user.target
